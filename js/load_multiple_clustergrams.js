@@ -11,8 +11,11 @@ default_args = {};
   default_args.matrix_update_callback = matrix_update_callback;
   default_args.dendro_callback = dendro_callback;
 
+// Valor a reemplazar con el archivo JSON
 function make_clust(make_sim_mats){
-  var clust_name = 'mult_view.json'
+  //var clust_name = 'mult_view.json'
+  var clust_name = 'edo1.json'
+
 
   d3.json('json/'+clust_name, function(network_data){
 
@@ -97,8 +100,8 @@ window.onscroll = function() {
 }
 
 function make_sim_mats(inst_rc, cat_colors){
-
-  clust_name = 'mult_view_sim_'+inst_rc+'.json';
+// Valor a reemplazar ( Solo nombre base sin col ni row)
+  clust_name = 'edo1_'+inst_rc+'.json';
   d3.json('json/'+clust_name, function(network_data){
 
     var args = $.extend(true, {}, default_args);

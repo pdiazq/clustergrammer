@@ -4,7 +4,7 @@ Example files
 
 var hzome = ini_hzome();
 
-make_clust('estandarData.json');
+make_clust('textPython3.json');
 
 var about_string = 'Zoom, scroll, and click buttons to interact with the clustergram. <a href="http://amp.pharm.mssm.edu/clustergrammer/help"> <i class="fa fa-question-circle" aria-hidden="true"></i> </a>';
 
